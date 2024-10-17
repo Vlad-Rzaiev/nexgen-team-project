@@ -35,6 +35,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfb;
   background-color: #7a3145;
+  counter-reset: item;
 }
 
 /*===== MOBILE CONTAINER =====*/
