@@ -1,3 +1,101 @@
-.four {
-  margin-bottom: 4px;
+/* hero mobile */
+
+.hero-section {
+  width: 100%;
+  background-color: #576f35;
+  background-image: url(/img/hero/mobile-hero.webp);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 375px, 370px;
+}
+
+.hero-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+.hero-paragraph {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: #fbfbfb;
+  padding-bottom: 410px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(/img/hero/mobile-hero@2x.webp);
+  }
+}
+
+/* hero tablet */
+
+@media screen and (min-width: 428px) {
+  .hero-section {
+    background-image: url(/img/hero/tablet-hero.webp);
+    background-size: 768px, 539px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(/img/hero/tablet-hero@2x.webp);
+    }
+  }
+
+  .hero-title {
+    font-size: 76px;
+    line-height: 76px;
+    padding-top: 122px;
+    margin-bottom: 25px;
+  }
+
+  .hero-paragraph {
+    font-size: 16px;
+    line-height: 125%;
+    padding-bottom: 589px;
+    max-width: 603px;
+  }
+}
+
+/* hero desktop */
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: url(/img/hero/desktop-hero.webp);
+    background-size: 650px, 800px;
+    background-position: top right;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(/img/hero/desktop-hero@2x.webp);
+    }
+  }
+
+  .hero-title {
+    padding-top: 238px;
+    margin-bottom: 128px;
+    max-width: 502px;
+    margin-right: 0;
+  }
+
+  .hero-paragraph {
+    padding-bottom: 50px;
+    max-width: 472px;
+    margin-right: 0;
+  }
 }
