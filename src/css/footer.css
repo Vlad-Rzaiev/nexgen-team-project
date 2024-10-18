@@ -72,15 +72,17 @@ ul {
 footer {
   padding: 50px 100px;
 }
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
  footer {
     padding: 32px;
 }
 .ul-menu {
   margin-bottom: 64px;
+  margin-right: 0;
 }
 .menu_contact {
   display: block;
+
 }
 .footer {
   margin-bottom: 100px;
@@ -89,5 +91,5 @@ footer {
   width: 248px;
     height: 20px;
 }
-
-} */
+}
+ 
