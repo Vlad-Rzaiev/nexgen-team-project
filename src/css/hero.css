@@ -69,7 +69,7 @@
 
 /* hero desktop */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero-container {
     background-image: url(/img/hero/desktop-hero.jpg);
     background-size: 650px, 800px;
