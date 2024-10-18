@@ -9,6 +9,7 @@
       anyone looking to eat healthier or support local farmers. Order your box
       today and start enjoying the best that nature has to offer!
     </p>
+
     <form class="order-modal-form">
       <p class="order-form-text">
         Ordering <span class="order-form-accent-red">from us</span> is quick and
@@ -16,27 +17,32 @@
         <span class="order-form-accent-green">the form</span> below and we will
         contact you !
       </p>
-      <input
-        class="order-form-input"
-        type="text"
-        name="full name"
-        placeholder="Full name"
-        required
-      />
-      <input
-        class="order-form-input"
-        type="email"
-        name="user email"
-        placeholder="Email"
-        required
-      />
-      <textarea
-        class="order-form-textarea"
-        name="user comment"
-        rows=""
-        cols=""
-        placeholder="Comment"
-      ></textarea>
+      <div class="order-input-wrapper">
+        <input
+          class="order-form-input"
+          type="text"
+          name="full name"
+          placeholder="Full Name"
+          required
+          autofocus
+        />
+      </div>
+      <div class="order-input-wrapper">
+        <input
+          class="order-form-input"
+          type="email"
+          name="user email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="order-textarea-wrapper">
+        <textarea
+          class="order-form-textarea"
+          name="user comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
       <button class="order-form-btn" type="submit">Send</button>
     </form>
 
@@ -90,18 +96,35 @@
           height="273"
         />
       </picture>
-      <p class="order-social-wrapper-text">Follow us on our social networks:</p>
-      <ul class="order-social-list">
-        <li>
-          <a href="" class="order-social-link">instagram</a>
-        </li>
-        <li>
-          <a href="" class="order-social-link">facebook</a>
-        </li>
-        <li>
-          <a href="" class="order-social-link">youtube</a>
-        </li>
-      </ul>
+      <div class="order-social-text-wrapper">
+        <p class="order-social-text">Follow us on our social networks:</p>
+        <ul class="order-social-list">
+          <li>
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="order-social-link"
+              target="_blank"
+              >instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="order-social-link"
+              target="_blank"
+              >facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="order-social-link"
+              target="_blank"
+              >youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
