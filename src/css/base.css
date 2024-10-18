@@ -35,6 +35,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: #fbfbfb;
   background-color: #7a3145;
+  counter-reset: item;
 }
 
 /*===== MOBILE CONTAINER =====*/
@@ -47,17 +48,21 @@ body {
 }
 
 /*===== TABLET CONTAINER =====*/
-.container {
-  width: 768px;
-  padding-left: 32px;
-  padding-right: 32px;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 /*===== DESKTOP CONTAINER =====*/
-.container {
-  width: 1280px;
-  padding-left: 100px;
-  padding-right: 100px;
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 /*===== MOBILE SECTIONS PADDINGS =====*/
