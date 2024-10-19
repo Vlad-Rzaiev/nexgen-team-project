@@ -15,15 +15,6 @@
   margin-bottom: 40px;
 }
 
-.order-modal-form {
-  padding: 40px 20px;
-  width: 335px;
-  border-radius: 30px;
-
-  margin-bottom: 20px;
-
-  background-color: #fbfbfb;
-}
 .order-form-text {
   font-weight: 600;
   font-size: 24px;
@@ -40,21 +31,85 @@
 .order-form-accent-green {
   color: #576f35;
 }
-.order-input-wrapper {
+
+.order-modal-form {
+  padding: 40px 20px;
+  width: 335px;
+  min-height: 533px;
+  border-radius: 30px;
+
   margin-bottom: 20px;
+
+  background-color: #fbfbfb;
 }
+.order-input-wrapper {
+  margin-bottom: 15px;
+}
+
 .order-form-input {
+  width: 100%;
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 30px;
+  height: 46px;
+  outline: none;
+
+  background-color: transparent;
+
+  padding-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #141414;
+  letter-spacing: -0.02em;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #141414;
 }
-.order-form-input:placeholder-shown {
+
+.order-form-input:focus {
+  border-color: #7a3145;
+  outline: none;
+}
+.order-form-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+.order-form-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
 }
 .order-textarea-wrapper {
   margin-bottom: 15px;
 }
 .order-form-textarea {
+  width: 100%;
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 15px;
+  height: 91px;
+  outline: none;
+  resize: none;
+
+  background-color: transparent;
+
+  padding: 14px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #141414;
+  letter-spacing: -0.02em;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #141414;
+}
+.order-form-textarea:focus {
+  border-color: #7a3145;
+  outline: none;
 }
 
 .order-form-btn {
@@ -72,9 +127,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form-btn:hover,
 .order-form-btn:focus {
+  background-color: #3c511e;
 }
 
 .order-social-media-wrapper {
