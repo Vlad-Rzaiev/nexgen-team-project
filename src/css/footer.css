@@ -16,7 +16,7 @@
   padding-bottom: 80px;
 }
 
-.footer-section .footer-middle .nav-ul {
+.footer-section .footer-middle .nav {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -30,13 +30,13 @@
   letter-spacing: -0.42px;
 }
 
-.container {
+/* .container {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
-.footer-section .address-ul {
+.footer-section .address {
   margin-top: 40px;
   display: flex;
   width: 215px;
@@ -64,8 +64,8 @@
   max-width: 296px;
 }
 
-.nav-ul,
-.address-ul {
+.nav,
+.address {
   list-style: none;
   padding: 0;
 }
@@ -81,25 +81,14 @@
   text-decoration: underline;
 }
 
-.footer-section .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 80px;
-}
-
 .footer-bottom {
   display: flex;
-  margin-top: 100px;
   justify-content: space-between;
-}
-
-.footer-section .privacy {
-  display: flex;
-  gap: 8px;
-}
-
-.privacy {
-  padding-right: 49px;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin-top: 80px;
+  gap: 49px;
 }
 
 .footer-section .privacy-a,
@@ -117,7 +106,7 @@
   letter-spacing: -0.18px;
 }
 
-/* Для мобилы */
+/* размер текста для мобилы */
 
 @media (max-width: 768px) {
   .address-a {
@@ -156,7 +145,7 @@
     margin: 0;
   }
 
-  .footer-section .footer-middle .nav-ul {
+  .footer-section .footer-middle .nav {
     gap: 25px;
   }
 
@@ -170,7 +159,7 @@
     font-size: 28px;
   }
 
-  .footer-section .address-ul {
+  .footer-section .address {
     margin: 0;
     width: 215px;
     gap: 25px;
@@ -225,10 +214,10 @@
     margin-left: auto;
     margin-right: 0;
   }
-  .footer-section .footer-middle .nav-ul {
+  .footer-section .footer-middle .nav {
     gap: 25px;
   }
-  .footer-section .address-ul {
+  .footer-section .address {
     width: 215px;
     gap: 25px;
   }
