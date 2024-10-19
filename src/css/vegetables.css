@@ -45,8 +45,59 @@
 
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.28;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) {
+  .vegetables-title {
+    max-width: 508px;
+    margin-bottom: 50px;
+  }
+
+  .vegetables-text {
+    max-width: 626px;
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px 20px;
+  }
+
+  .vegetables-item {
+    padding: 32px 30px;
+    max-width: 332px;
+  }
+
+  .vegetables-item-title {
+    font-size: 32px;
+  }
+
+  .vegetables-item-text {
+    margin-bottom: 10px;
+  }
+}
+
+/* DESKTOP STYLES */
+@media screen and (min-width: 1280px) {
+  .vegetables-title {
+    margin-bottom: 25px;
+  }
+
+  .vegetables-list {
+    gap: 28px 21px;
+  }
+
+  .vegetables-item {
+    padding: 32px;
+    max-width: 346px;
+  }
 }
