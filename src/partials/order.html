@@ -1,4 +1,4 @@
-<section class="section-paddings order-section">
+<section class="section-paddings">
   <div class="container">
     <h2 class="section-title">
       fresh <span class="order-title-accent">harvest</span> box has got you
@@ -25,7 +25,6 @@
             name="full name"
             placeholder="Full Name"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            )
             required
             autofocus
           />
@@ -37,7 +36,6 @@
             name="user email"
             placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            )
             required
           />
         </div>
@@ -54,46 +52,55 @@
         <picture>
           <source
             media="(min-width: 1280px)"
-            type="image/png"
+            type="image/webp"
             srcset="
-              /img/order/desktop-order.png    1x,
-              /img/order/desktop-order@2x.png 2x
+              ./img/order/desktop-order.webp    1x,
+              ./img/order/desktop-order@2x.webp 2x
             "
           />
           <source
             media="(min-width: 1280px)"
+            type="image/png"
+            srcset="
+              ./img/order/desktop-order.png    1x,
+              ./img/order/desktop-order@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
             type="image/webp"
             srcset="
-              /img/order/desktop-order.webp    1x,
-              /img/order/desktop-order@2x.webp 2x
+              ./img/order/tablet-order.webp    1x,
+              ./img/order/tablet-order@2x.webp 2x
             "
           />
           <source
             media="(min-width: 768px)"
             type="image/png"
             srcset="
-              /img/order/tablet-order.png    1x,
-              /img/order/tablet-order@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            type="image/webp"
-            srcset="
-              /img/order/tablet-order.webp    1x,
-              /img/order/tablet-order@2x.webp 2x
+              ./img/order/tablet-order.png    1x,
+              ./img/order/tablet-order@2x.png 2x
             "
           />
           <source
             media="(max-width: 767px)"
             type="image/png"
             srcset="
-              /img/order/mobile-order.webp 1x,
-              /img/order/mobile-order.webp 2x
+              ./img/order/mobile-order.webp 1x,
+              ./img/order/mobile-order.webp 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            type="image/png"
+            srcset="
+              ./img/order/mobile-order.png 1x,
+              ./img/order/mobile-order.png 2x
             "
           />
           <img
-            src="/img/order/desktop-order.png"
+            class="order-img"
+            src="./img/order/desktop-order.png"
             alt="A woman makes a smoothie and squeezes lemon into a glass bottle"
           />
         </picture>
