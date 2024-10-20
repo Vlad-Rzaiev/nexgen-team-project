@@ -1,3 +1,58 @@
-.one {
-  margin-bottom: 4px;
+/*Advertisement section mobile*/
+
+.advertisement-section {
+  background-color: #fbfbfb;
+}
+
+.advertisement-text {
+  font-weight: 600;
+  font-size: 48px;
+  /* line-height: 50px; */
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  display: block;
+  color: #141414;
+}
+
+.advertisement-accent-box {
+  display: block;
+  color: #fbfbfb;
+  background-color: #576f35;
+  border-radius: 12px;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (min-width: 768px) {
+  .advertisement-text {
+    font-size: 64px;
+    line-height: 1.09;
+  }
+
+  .advertisement-accent-box {
+    padding-top: 8px;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+/*Advertisement section desktop*/
+
+@media screen and (min-width: 1280px) {
+  .advertisement-accent-box {
+    font-size: 76px;
+    line-height: 1.05;
+    display: inline;
+    padding-left: 13px;
+    padding-right: 0;
+    margin-left: -13px;
+    margin-right: 0;
+  }
 }

@@ -1,40 +1,41 @@
-/* inter-regular - latin */
+/* inter-tight-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-500 - latin */
+/* inter-tight-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v7-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-600 - latin */
+/* inter-tight-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v7-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-700 - latin */
+/* inter-tight-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/inter-tight-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   color: #fbfbfb;
   background-color: #7a3145;
+  counter-reset: item;
 }
 
 /*===== MOBILE CONTAINER =====*/
@@ -47,17 +48,21 @@ body {
 }
 
 /*===== TABLET CONTAINER =====*/
-.container {
-  width: 768px;
-  padding-left: 32px;
-  padding-right: 32px;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 /*===== DESKTOP CONTAINER =====*/
-.container {
-  width: 1280px;
-  padding-left: 100px;
-  padding-right: 100px;
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 /*===== MOBILE SECTIONS PADDINGS =====*/
