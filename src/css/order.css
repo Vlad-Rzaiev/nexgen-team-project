@@ -6,11 +6,10 @@
   color: rgba(251, 251, 251, 0.3);
 }
 .order-text {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  color: var(--main-text);
+  color: #fbfbfb;
 
   margin-bottom: 40px;
 }
@@ -160,16 +159,108 @@
   flex-wrap: wrap;
   gap: 8px;
 }
-.order-social-link {
+.order-social-item:not(:last-child):after {
+  content: '/';
   font-weight: 600;
   font-size: 24px;
   line-height: 108%;
   letter-spacing: -0.01em;
   color: #fbfbfb;
+
+  margin-left: 8px;
+}
+.order-social-link {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
 }
 
-.order-social-link::after {
-  content: '/';
-  margin-left: 8px;
-  color: #fbfbfb;
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 25px;
+    max-width: 640px;
+  }
+  .order-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 640px;
+
+    margin-bottom: 50px;
+  }
+
+  .order-modal-form {
+    padding: 50px 100px;
+    width: 628px;
+    min-height: 534px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  .order-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .order-form-textarea::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .order-social-media-wrapper {
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 628px;
+    margin: 0 auto;
+  }
+
+  .order-social-text-wrapper {
+    margin-top: 50px;
+  }
+  .order-social-text {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+
+    margin-bottom: 15px;
+  }
+  .order-social-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .order-social-item:not(:last-child):after {
+    font-size: 32px;
+    line-height: 1;
+
+    margin-left: 12px;
+  }
+  .order-social-link {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
+
+/*===== DESKTOP CONTAINER =====*/
+@media screen and (min-width: 1280px) {
+  .section-title {
+    max-width: 751px;
+  }
+  .order-text {
+    max-width: 751px;
+  }
+  .order-form-and-social-media-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .order-modal-form {
+    padding: 50px;
+    width: 529px;
+  }
+  .order-social-media-wrapper {
+    max-width: 527px;
+  }
 }
