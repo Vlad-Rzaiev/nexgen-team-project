@@ -20,7 +20,6 @@
   color: #fbfbfb;
   background-color: #576f35;
   border-radius: 12px;
-  padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: -10px;
@@ -34,7 +33,6 @@
   }
 
   .advertisement-accent-box {
-    padding-top: 8px;
     white-space: nowrap;
     padding-left: 16px;
     padding-right: 16px;
