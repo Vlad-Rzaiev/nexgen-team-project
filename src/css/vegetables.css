@@ -26,8 +26,6 @@
 .vegetables-item {
   border-radius: 40px;
   padding: 32px 26px;
-  max-width: 334px;
-  height: 100%;
 
   background: #fbfbfb;
 }
@@ -76,9 +74,7 @@
 
   .vegetables-item {
     padding: 32px 30px;
-    max-width: 342px;
-
-    width: calc((100%-20px) / 2);
+    width: calc((100% - 20px) / 2);
   }
 
   .vegetables-item-title {
@@ -102,8 +98,6 @@
 
   .vegetables-item {
     padding: 32px;
-    max-width: 346px;
-
-    width: calc((100%-42px) / 3);
+    width: calc((100% - 42px) / 3);
   }
 }
