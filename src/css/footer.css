@@ -205,7 +205,7 @@
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.27px;
-    margin-left: 183px;
+    margin-left: auto;
   }
 }
 
@@ -252,8 +252,5 @@
 
   .footer-section .footer-bottom {
     margin-top: 125px;
-  }
-  .footer-section .footer-bottom-p {
-    margin-left: 0;
   }
 }
