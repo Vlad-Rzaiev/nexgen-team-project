@@ -9,11 +9,16 @@
   margin: 0;
 }
 
-.footer-section .container {
+/* .footer-section .container {
   padding-top: 40px;
-  padding-right: 59px;
+  padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
+} */
+
+.footer-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-section .footer-middle .nav {
@@ -88,7 +93,6 @@
   flex-wrap: nowrap;
   white-space: nowrap;
   margin-top: 80px;
-  gap: 49px;
 }
 
 .footer-section .privacy-a,
@@ -97,6 +101,10 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.18px;
+}
+
+.privacy-a:hover {
+  text-decoration: underline;
 }
 
 .footer-section .footer-bottom-p {
@@ -108,7 +116,7 @@
 
 /* размер текста для мобилы */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .address-a {
     font-size: 14px;
   }
@@ -117,8 +125,13 @@
 /* Планшет */
 
 @media only screen and (min-width: 768px) {
-  .footer-section .container {
-    padding-bottom: 24px;
+  /* .footer-section .container {
+    padding-bottom: 32px;
+  } */
+
+  .footer-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .blocks {
     flex-wrap: nowrap;
@@ -198,8 +211,13 @@
 
 /* Десктоп */
 @media (min-width: 1280px) {
-  .footer-section .container {
-    padding-bottom: 25px;
+  /* .footer-section .container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  } */
+  .footer-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .footer-section .footer-top {
