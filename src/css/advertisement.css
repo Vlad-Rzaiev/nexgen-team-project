@@ -27,8 +27,6 @@
   margin-right: -10px;
 }
 
-/*Advertisement section tablet*/
-
 @media screen and (min-width: 768px) {
   .advertisement-text {
     font-size: 64px;
