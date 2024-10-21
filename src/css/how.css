@@ -127,16 +127,16 @@
     background: linear-gradient(
       to right,
       #7a3145 0%,
-      #7a3145 48.5%,
-      #576f35 48.5%,
+      #7a3145 49.8%,
+      #576f35 49.8%,
       #576f35 100%
     );
-    padding-top: 100px;
   }
 
   .how-section-div {
     display: flex;
     column-gap: 200px;
+    min-width: 1280px;
   }
 
   .div-how {
