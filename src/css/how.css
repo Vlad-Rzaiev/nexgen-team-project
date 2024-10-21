@@ -124,13 +124,7 @@
 
 @media screen and (min-width: 1280px) {
   .how-section {
-    background: linear-gradient(
-      to right,
-      #7a3145 0%,
-      #7a3145 49.8%,
-      #576f35 49.8%,
-      #576f35 100%
-    );
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
   }
 
   .how-section-div {

@@ -7,13 +7,6 @@
   margin: 0;
 }
 
-/* .footer-section .container {
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
-} */
-
 .footer-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -32,12 +25,6 @@
   line-height: 28px;
   letter-spacing: -0.42px;
 }
-
-/* .container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
-} */
 
 .footer-section .address {
   margin-top: 40px;
@@ -112,21 +99,13 @@
   letter-spacing: -0.18px;
 }
 
-/* размер текста для мобилы */
-
 @media (max-width: 767px) {
   .address-a {
     font-size: 14px;
   }
 }
 
-/* Планшет */
-
-@media only screen and (min-width: 768px) {
-  /* .footer-section .container {
-    padding-bottom: 32px;
-  } */
-
+@media screen and (min-width: 768px) {
   .footer-section {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -135,9 +114,6 @@
     flex-wrap: nowrap;
   }
 
-  .footer-section .footer-top {
-    margin-right: 183px;
-  }
   .footer-section .footer-top-p {
     font-size: 16px;
     line-height: 20px;
@@ -147,13 +123,18 @@
   }
 
   .logo-mobile {
+    display: block;
     width: 194px;
     height: 18px;
+    margin-top: 0;
   }
 
   .footer-section .footer-middle {
     gap: 64px;
-    margin: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 0;
   }
 
   .footer-section .footer-middle .nav {
@@ -207,15 +188,14 @@
   }
 }
 
-/* Десктоп */
 @media (min-width: 1280px) {
-  /* .footer-section .container {
-    padding-bottom: 50px;
-    padding-top: 50px;
-  } */
   .footer-section {
     padding-bottom: 50px;
     padding-top: 50px;
+  }
+
+  .logo-mobile {
+    margin-top: 0;
   }
 
   .footer-section .footer-top {
@@ -227,7 +207,8 @@
   }
   .footer-section .footer-middle {
     gap: 121px;
-    margin-left: auto;
+    flex-direction: row;
+    margin-top: 0;
     margin-right: 0;
   }
   .footer-section .footer-middle .nav {

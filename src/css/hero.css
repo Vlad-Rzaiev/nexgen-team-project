@@ -70,10 +70,17 @@
 /* hero desktop */
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    background-position: 100% 0;
+  }
+
   .hero-container {
     background-image: url(/img/hero/desktop-hero.jpg);
     background-size: 650px, 800px;
     background-position: top right;
+    max-width: 1300px;
+    padding-left: 105px;
+    padding-right: 105px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
