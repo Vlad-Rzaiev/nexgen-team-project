@@ -98,8 +98,8 @@
   background-color: var(--background-2);
   border-radius: 30px;
   border: 1px solid rgba(251, 251, 251, 0.2);
-  padding: 0;
-  width: 155px;
+  padding: 16px 41px;
+  min-width: 155px;
   height: 50px;
   margin-top: auto;
   margin-left: auto;

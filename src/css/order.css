@@ -32,7 +32,7 @@
 
 .order-modal-form {
   padding: 40px 20px;
-  width: 335px;
+  max-width: 335px;
   min-height: 533px;
   border-radius: 30px;
 
