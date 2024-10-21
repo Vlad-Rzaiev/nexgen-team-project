@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/nexgen-team-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEXGEN - Green Harvest</title>
+    <title>Green Harvest - NEXGEN</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -13,10 +13,9 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/nexgen-team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/nexgen-team-project/assets/index-BVOBHXZ3.css">
+    <link rel="stylesheet" crossorigin href="/nexgen-team-project/assets/index-BQgI-7V2.css">
   </head>
   <body>
-    <!-- Yaroslava Podhorna -->
     <header class="page-header">
   <div class="container header-container">
     <nav class="header-nav">
@@ -28,18 +27,23 @@
 
       <ul class="header-nav-list">
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#how-it-works">How It Works</a>
+          <a class="header-nav-link" href="#how-it-work">How It Works</a>
         </li>
         <li class="header-nav-item">
           <a class="header-nav-link" href="#vegetables">Vegetables</a>
         </li>
         <li class="header-nav-item">
-          <a class="header-nav-link" href="#reviews">Reviews</a>
+          <a class="header-nav-link" href="#section-reviews">Reviews</a>
         </li>
       </ul>
     </nav>
 
-    <button class="header-btn" type="button">
+    <button
+      class="header-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="header-btn-icon" width="32" height="32">
         <use href="/nexgen-team-project/assets/sprite-Bx1rJj33.svg#icon-burger"></use>
       </svg>
@@ -50,7 +54,6 @@
 
 
     <main>
-      <!-- Yara Konoshenko -->
       <section class="hero-section">
   <div class="hero-container container">
     <h1 class="hero-title">organic vegetables to your diet today!</h1>
@@ -63,8 +66,7 @@
   </div>
 </section>
 
-      <!-- Serhii Kvach -->
-      <section class="section-paddings how-section">
+      <section class="section-paddings how-section" id="how-it-work">
   <div class="how-section-div container">
     <h2 class="visually-hidden">how it made</h2>
     <picture class="how-picture">
@@ -98,7 +100,12 @@
         media="(max-width: 767px)"
         type="image/png"
       />
-      <img class="how-img" src="/nexgen-team-project/assets/desktop-how-BNKWPiMb.webp" alt="woman cooks" />
+      <img
+        class="how-img"
+        src="/nexgen-team-project/assets/desktop-how-BNKWPiMb.webp"
+        alt="woman cooks"
+        loading="lazy"
+      />
     </picture>
     <div class="div-how">
       <p class="how-title section-title">
@@ -142,7 +149,6 @@
   </div>
 </section>
 
-      <!-- Alina Hvozdikovska -->
       <section class="section-paddings advertisement-section">
   <div class="container">
     <h2 class="visually-hidden">Advertisement</h2>
@@ -154,7 +160,6 @@
   </div>
 </section>
 
-      <!-- Maksym Balo -->
       <section class="vegetables-section section-paddings" id="vegetables">
   <div class="vegetables-wrapper container">
     <h2 class="vegetables-title section-title">
@@ -184,6 +189,7 @@
             alt="eggplant"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -205,6 +211,7 @@
             alt="leek"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -226,6 +233,7 @@
             alt="mushrooms"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -247,6 +255,7 @@
             alt="corn"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -268,6 +277,7 @@
             alt="sweet-potatoes"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -289,6 +299,7 @@
             alt="carrot"
             width="282"
             height="243"
+            loading="lazy"
           />
         </picture>
       </li>
@@ -296,7 +307,6 @@
   </div>
 </section>
 
-      <!-- Leon -->
       <section class="reviews-section section-paddings" id="section-reviews">
   <div class="container">
     <div class="reviews-name-container">
@@ -325,6 +335,7 @@
             alt="victoria-romashenko"
             width="56"
             height="56"
+            loading="lazy"
           />
         </picture>
         <h3 class="reviews-list-name">John Wax</h3>
@@ -350,6 +361,7 @@
             alt="victoria-romashenko"
             width="56"
             height="56"
+            loading="lazy"
           />
         </picture>
         <h3 class="reviews-list-name">Victoria Romashenko</h3>
@@ -375,6 +387,7 @@
             alt="ihor-trachuk"
             width="56"
             height="56"
+            loading="lazy"
           />
         </picture>
         <h3 class="reviews-list-name">Ihor Trachuk</h3>
@@ -388,7 +401,6 @@
   </div>
 </section>
 
-      <!-- Sonia N -->
       <section class="section-paddings">
   <div class="container">
     <h2 class="section-title order-section-title">
@@ -417,7 +429,6 @@
             placeholder="Full Name"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
-            autofocus
           />
         </div>
         <div class="order-input-wrapper">
@@ -475,6 +486,7 @@
             class="order-img"
             src="/nexgen-team-project/assets/desktop-order-uIhfFGA-.png"
             alt="A woman makes a smoothie and squeezes lemon into a glass bottle"
+            loading="lazy"
           />
         </picture>
         <div class="order-social-text-wrapper">
@@ -513,7 +525,6 @@
 
     </main>
 
-    <!-- Ihor Martyn -->
     <footer class="footer-section">
   <div class="container">
     <div class="blocks">
@@ -535,9 +546,9 @@
       <div class="footer-middle">
         <nav>
           <ul class="nav">
-            <li><a class="nav-a" href="#how">how it works</a></li>
+            <li><a class="nav-a" href="#how-it-work">how it works</a></li>
             <li><a class="nav-a" href="#vegetables">vegetables</a></li>
-            <li><a class="nav-a" href="#reviews">reviews</a></li>
+            <li><a class="nav-a" href="#section-reviews">reviews</a></li>
           </ul>
         </nav>
 
@@ -572,20 +583,25 @@
   </div>
 </footer>
 
-    <!-- Alina Komerista -->
-    <div class="backdrop">
+    <div class="backdrop js-menu-container" id="mobile-menu">
   <div class="mobile-menu-container">
-    <div class="wrapper">
-      <button class="btn-close">
+    <div class="menu-wrapper">
+      <button class="btn-close js-close-menu">
         <svg class="icon-menu" width="32" height="32">
           <use href="/nexgen-team-project/assets/sprite-Bx1rJj33.svg#icon-close"></use>
         </svg>
       </button>
       <nav class="menu-nav">
         <ul class="list-mbl-menu">
-          <li class="li-mbl">How It Works</li>
-          <li class="li-mbl">Vegetables</li>
-          <li class="li-mbl last">Reviews</li>
+          <li class="li-mbl">
+            <a class="menu-link" href="#how-it-work">How It Works</a>
+          </li>
+          <li class="li-mbl">
+            <a class="menu-link" href="#vegetables">Vegetables</a>
+          </li>
+          <li class="li-mbl">
+            <a class="menu-link" href="#section-reviews">Reviews</a>
+          </li>
         </ul>
       </nav>
       <button type="button" class="btn-mobile">SHOP NOW</button>
@@ -594,5 +610,11 @@
 </div>
 
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
