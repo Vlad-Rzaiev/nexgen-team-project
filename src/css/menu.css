@@ -15,8 +15,14 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: translateX(0%);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    transform 450ms linear;
 }
 
+.backdrop:not(.is-open) {
+  transform: translateX(100%);
+}
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
