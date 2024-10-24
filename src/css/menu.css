@@ -12,17 +12,14 @@
   width: 100%;
   z-index: 999999;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(0%);
-  transition: opacity 250ms linear, visibility 250ms linear,
-    transform 450ms linear;
+
+  transition: opacity 350ms linear, visibility 350ms linear;
 }
 
-.backdrop:not(.is-open) {
-  transform: translateX(100%);
-}
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
@@ -37,6 +34,11 @@
   width: 100%;
   top: 0;
   padding-bottom: 40px;
+  transform: translateX(0%);
+  transition: transform 350ms linear;
+}
+.backdrop:not(.is-open) .mobile-menu-container {
+  transform: translateX(100%);
 }
 .menu-wrapper {
   min-width: 320px;
