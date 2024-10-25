@@ -1,108 +1,97 @@
-.blocks {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-section .footer-top {
-  margin: 0;
-}
-
 .footer-section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.footer-section .footer-middle .nav {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
+.footer-logo-nav-wrap {
+  margin-bottom: 80px;
 }
 
-.footer-section .footer-middle .nav-a {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -0.42px;
+.footer-logo-text-wrap {
+  margin-bottom: 40px;
 }
 
-.footer-section .address {
-  margin-top: 40px;
-  display: flex;
-  width: 215px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
+.footer-logo-link {
+  display: block;
+  margin-bottom: 14px;
 }
 
-.footer-middle {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 40px 0 0;
-}
-
-.logo-mobile {
-  width: 168px;
-  height: 16px;
-  margin-top: -4px;
-}
-
-.footer-top-p {
-  margin-top: 14px;
+.footer-slogan {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.29;
   max-width: 296px;
 }
 
-.nav,
-.address {
-  list-style: none;
-  padding: 0;
+.footer-nav {
+  margin-bottom: 40px;
 }
 
-.nav-a,
-.address-a {
-  color: #fbfbfb;
-  text-decoration: none;
-}
-
-.nav-a:hover,
-.address-a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
+.footer-nav-list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  margin-top: 80px;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.footer-section .privacy-a,
-.footer-section .privacy-text {
-  color: #fbfbfb80;
+.footer-nav-link {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  transition: color 250ms linear;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #576f35;
+}
+
+.footer-contacts-item:nth-of-type(1) {
+  margin-bottom: 14px;
+}
+
+.footer-contacts-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  display: block;
+  max-width: 179px;
+  transition: color 250ms linear;
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: #576f35;
+}
+
+.footer-privacy-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.footer-privacy-cookie-link {
+  font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.18px;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  color: rgba(251, 251, 251, 0.5);
+  transition: color 250ms linear;
 }
 
-.privacy-a:hover {
-  text-decoration: underline;
+.footer-privacy-hover:hover,
+.footer-privacy-hover:focus {
+  color: #576f35;
 }
 
-.footer-section .footer-bottom-p {
-  color: #fbfbfb80;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.18px;
+.footer-slash {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-@media (max-width: 767px) {
-  .address-a {
-    font-size: 14px;
-  }
+.copy {
+  line-height: 1.17;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,126 +99,76 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .blocks {
-    flex-wrap: nowrap;
+
+  .footer-logo-nav-wrap {
+    display: flex;
+    margin-bottom: 100px;
   }
 
-  .footer-section .footer-top-p {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.32px;
-    width: 265px;
-    margin-top: 25px;
+  .footer-logo-text-wrap {
+    margin-bottom: 0;
   }
 
-  .logo-mobile {
-    display: block;
+  .footer-logo-link {
+    margin-bottom: 25px;
+  }
+
+  .footer-logo-icon {
     width: 194px;
     height: 18px;
-    margin-top: 0;
   }
 
-  .footer-section .footer-middle {
-    gap: 64px;
-    flex-wrap: nowrap;
-    flex-direction: column;
+  .footer-slogan {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 265px;
+  }
+
+  .footer-nav-contacts-wrap {
     margin-left: auto;
-    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  .footer-section .footer-middle .nav {
+  .footer-nav-list {
     gap: 25px;
   }
 
-  .footer-section .footer-middle .nav-a {
-    color: #fbfbfb;
+  .footer-nav-link {
     font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -0.48px;
-  }
-  .footer-middle .nav-a {
-    font-size: 28px;
   }
 
-  .footer-section .address {
-    margin: 0;
-    width: 215px;
-    gap: 25px;
+  .footer-contacts-item:nth-of-type(1) {
+    margin-bottom: 25px;
   }
 
-  .footer-section .address-a {
+  .footer-contacts-link {
     font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.27px;
-    width: 215px;
+    line-height: 1.11;
+    max-width: 215px;
   }
 
-  .footer-bottom {
-    justify-content: unset;
-    box-sizing: content-box;
-  }
-
-  .footer-section .footer-bottom {
-    margin-top: 100px;
-  }
-
-  .footer-section .privacy-a,
-  .footer-section .privacy-text {
+  .footer-privacy-cookie-link {
     font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.27px;
-  }
-
-  .footer-section .footer-bottom-p {
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.27px;
-    margin-left: auto;
+    line-height: 1.11;
   }
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .footer-section {
-    padding-bottom: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .logo-mobile {
-    margin-top: 0;
+  .footer-logo-nav-wrap {
+    margin-bottom: 125px;
   }
 
-  .footer-section .footer-top {
-    margin-right: 0;
-  }
-  .footer-section .footer-top-p {
-    line-height: 20px;
-    font-size: 16px;
-  }
-  .footer-section .footer-middle {
-    gap: 121px;
-    flex-direction: row;
-    margin-top: 0;
-    margin-right: 0;
-  }
-  .footer-section .footer-middle .nav {
-    gap: 25px;
-  }
-  .footer-section .address {
-    width: 215px;
-    gap: 25px;
+  .footer-nav-contacts-wrap {
+    display: flex;
   }
 
-  .footer-section .privacy {
-    margin-right: 599px;
-  }
-  .footer-section .privacy-a,
-  .footer-section .privacy-text {
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.27px;
-  }
-
-  .footer-section .footer-bottom {
-    margin-top: 125px;
+  .footer-nav {
+    margin-right: 121px;
+    margin-bottom: 0;
   }
 }
